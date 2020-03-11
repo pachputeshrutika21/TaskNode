@@ -1,10 +1,10 @@
 {
   "name": "tasknode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-   "start":"PORT=7700 HOST=localhost node app"
+    "start": "PORT=7700 HOST=localhost node app"
   },
   "repository": {
     "type": "git",
