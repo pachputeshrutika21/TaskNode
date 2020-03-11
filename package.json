@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "PORT=7700 HOST=localhost node app"
+    "start": "node app"
   },
   "repository": {
     "type": "git",
