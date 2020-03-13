@@ -1,7 +1,7 @@
 // const qliktagInterns = require('./qliktagInterns')
 const mongoose=require('mongoose');
 
-// const index = require('./index');
+ const index = require('./index');
 require('dotenv').config({path:'variables.env'});
 mongoose.connect(process.env.DATABASE);
 mongoose.Promise=global.Promise;
