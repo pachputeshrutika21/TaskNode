@@ -1,0 +1,11 @@
+mixin userForm(user={})
+    form(action="/add" method="POST")
+        label(for="name") Name
+        input(type="text" name="name")
+        label(for="age") Age
+        input(type="number" name="age")
+        label(for="city") City
+        input(type="text" name="city")
+        label(for="state") State
+        input(type="text" name="state")
+        input(type="submit" value="save" class="button")
