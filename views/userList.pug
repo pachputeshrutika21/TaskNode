@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+
+        title Users
+    body
+
+        if users.length != 0
+            table.users
+                tr
+                    th Name
+                    th Age
+                    th City
+                    th State
+                    th EmailId
+                each user in users
+                    tr 
+                        td #{user.name}
+                        td #{user.age}
+                        td #{user.city}
+                        td #{user.state}
+                        td.emailId #{user.emailId}
+                        td 
+                            form(action=`/user/edit?emailId=${user.emailId}` method="POST" class="dataEdit" style="visibility:hidden")
+                                input(type="submit" value="Edit")
+                        td
+                            form(action=`/user?emailId=${user.emailId}` method="POST" class="dataEdit" enctype="application/x-www-form-urlencoded")
+                                input(type="hidden" name="_method" value="delete")
+                                input(type="submit" value="Delete")             
+        a(href="/user/add")               
+            button Add
+        button.selectTable Edit
+        script
+            include ../edit.js
